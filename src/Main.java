@@ -3,31 +3,35 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static int MinNum(List<Integer> list){
-        if (list.size() == 1){
-            return list.get(0);
-        }
-        int fElement = list.get(0);
-        int Min = MinNum(list.subList(1, list.size()));
-
-        return Math.min(fElement, Min);
-    }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        System.out.print("Write a number between 1-10:");
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
 
-        //Creating list
-        List<Integer> l1 = new ArrayList<>();
+        switch (num){
+            case 1:
+                Scanner sc = new Scanner(System.in);
 
-        System.out.println("Write the number: ");
-        int n = sc.nextInt();
+                //Creating list
+                List<Integer> l1 = new ArrayList<>();
 
-        for (int i = 1; i <= n; i++) {
-            int element = sc.nextInt();
-            l1.add(element);
+                System.out.print("Write the number: ");
+                int n = sc.nextInt();
+
+                for (int i = 1; i <= n; i++) {
+                    int element = sc.nextInt();
+                    l1.add(element);
+                }
+
+                int res = TASKS.MinNum(l1);
+                System.out.println(res);
+                break;
+
+
+
         }
 
-        int res = MinNum(l1);
-        System.out.println(res);
+
     }
 }
