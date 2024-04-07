@@ -76,8 +76,8 @@ public class Main {
                 System.out.print("Write the power: ");
                 Scanner sc_6_1 = new Scanner(System.in);
                 int b = sc_6_1.nextInt();
-                double res_6 = TASKS.power(num_6,b);
-                System.out.println(num_6 + "**" + b + " = " + res_6);
+                double res_6 = TASKS.pow(num_6,b);
+                System.out.println(num_6 + "^" + b + " = " + res_6);
         }
 
 

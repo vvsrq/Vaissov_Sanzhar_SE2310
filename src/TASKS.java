@@ -59,13 +59,13 @@ public class TASKS {
         }
     }
 
-    public static double power(double a, int n) {
+    public static double pow(double a, int n) {
         if (n == 0) {
             return 1;
         } else if (n < 0) {
-            return 1.0 / power(a, -n); // Handle negative exponents (optional)
+            return 1.0 / pow(a, -n); // Handle negative exponents (optional)
         } else {
-            return a * power(a, n - 1);
+            return a * pow(a, n - 1);
         }
     }
 
