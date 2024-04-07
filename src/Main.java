@@ -45,6 +45,15 @@ public class Main {
                 System.out.println(res_2);
                 break;
 
+            case 3:
+                System.out.print("Write the number: ");
+                Scanner sc_3 = new Scanner(System.in);
+                int num_3 = sc_3.nextInt();
+                if (TASKS.isPrime(num_3)) {
+                    System.out.println(num_3 + " is a prime number");
+                } else {
+                    System.out.println(num_3 + " is not a prime number");
+                }
         }
 
 

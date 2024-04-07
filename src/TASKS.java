@@ -21,6 +21,25 @@ public class TASKS {
         }
     }
 
+    public static boolean isPrime(int n) {
+        if (n <= 1) {
+            return false;
+        }
+        if (n <= 3) {
+            return true;
+        }
+        // Only check for divisibility by 2 and 3 for efficiency
+        if (n % 2 == 0 || n % 3 == 0) {
+            return false;
+        }
+        // Check for divisibility by numbers of the form 6k +/- 1
+        for (int i = 5; i * i <= n; i += 6) {
+            if (n % i == 0 || n % (i + 2) == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
 
 }
