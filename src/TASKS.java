@@ -80,4 +80,12 @@ public class TASKS {
         return Check(s.substring(1));
     }
 
+    public static long binomial(int n, int k) {
+        if (k == 0 || k == n) {
+            return 1; // Base cases: C(n, 0) = C(n, n) = 1
+        } else {
+            return binomial(n - 1, k - 1) + binomial(n - 1, k);
+        }
+    }
+
 }

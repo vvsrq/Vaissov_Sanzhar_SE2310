@@ -93,6 +93,18 @@ public class Main {
                 String str = sc_8.nextLine();
                 System.out.println(str + " is all digits: " + TASKS.Check(str));
                 break;
+
+            case 9:
+                System.out.print("Write n: ");
+                Scanner sc_9_1 = new Scanner(System.in);
+                int n1 = sc_9_1.nextInt();
+                System.out.print("Write k: ");
+                Scanner sc_9_2 = new Scanner(System.in);
+                int k1 = sc_9_2.nextInt();
+
+                long result = TASKS.binomial(n1, k1);
+                System.out.println("C(" + n1 + ", " + k1 + ") = " + result);
+
         }
 
 
