@@ -68,6 +68,16 @@ public class Main {
                 int num_5 = sc_5.nextInt();
                 int res_5 = TASKS.fibonacci(num_5);
                 System.out.println(num_5 + " = " + res_5);
+
+            case 6:
+                System.out.print("Write the number: ");
+                Scanner sc_6 = new Scanner(System.in);
+                double num_6 = sc_6.nextInt();
+                System.out.print("Write the power: ");
+                Scanner sc_6_1 = new Scanner(System.in);
+                int b = sc_6_1.nextInt();
+                double res_6 = TASKS.power(num_6,b);
+                System.out.println(num_6 + "**" + b + " = " + res_6);
         }
 
 

@@ -59,5 +59,16 @@ public class TASKS {
         }
     }
 
+    public static double power(double a, int n) {
+        if (n == 0) {
+            return 1;
+        } else if (n < 0) {
+            return 1.0 / power(a, -n); // Handle negative exponents (optional)
+        } else {
+            return a * power(a, n - 1);
+        }
+    }
+
+
 
 }
