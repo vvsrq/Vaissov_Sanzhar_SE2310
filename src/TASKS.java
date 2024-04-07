@@ -69,6 +69,15 @@ public class TASKS {
         }
     }
 
-
+    public static boolean Check(String s) {
+        if (s.isEmpty()) {
+            return true;
+        }
+        char firstChar = s.charAt(0);
+        if (!Character.isDigit(firstChar)) {
+            return false;
+        }
+        return Check(s.substring(1));
+    }
 
 }
