@@ -54,6 +54,13 @@ public class Main {
                 } else {
                     System.out.println(num_3 + " is not a prime number");
                 }
+
+            case 4:
+                System.out.print("Write the number: ");
+                Scanner sc_4 = new Scanner(System.in);
+                int num_4 = sc_4.nextInt();
+                int res_4 = TASKS.factorial(num_4);
+                System.out.println(num_4 + "! = " + res_4);
         }
 
 
