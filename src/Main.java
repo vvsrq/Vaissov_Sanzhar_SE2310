@@ -61,6 +61,13 @@ public class Main {
                 int num_4 = sc_4.nextInt();
                 int res_4 = TASKS.factorial(num_4);
                 System.out.println(num_4 + "! = " + res_4);
+
+            case 5:
+                System.out.print("Write the number: ");
+                Scanner sc_5 = new Scanner(System.in);
+                int num_5 = sc_5.nextInt();
+                int res_5 = TASKS.fibonacci(num_5);
+                System.out.println(num_5 + " = " + res_5);
         }
 
 
