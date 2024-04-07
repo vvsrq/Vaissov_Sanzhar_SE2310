@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -11,6 +12,15 @@ public class TASKS {
 
         return Math.min(fElement, Min);
     }
+
+    public static double average(int[] data, int index, double total) {
+        if (index == data.length) {
+            return total / data.length;
+        } else {
+            return average(data, index + 1, total + data[index]);
+        }
+    }
+
 
 
 }
