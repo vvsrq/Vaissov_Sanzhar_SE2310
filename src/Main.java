@@ -105,6 +105,17 @@ public class Main {
                 long result = TASKS.binomial(n1, k1);
                 System.out.println("C(" + n1 + ", " + k1 + ") = " + result);
 
+            case 10:
+                System.out.print("Write a: ");
+                Scanner sc_10 = new Scanner(System.in);
+                int n2 = sc_10.nextInt();
+                System.out.print("Write b: ");
+                Scanner sc_11 = new Scanner(System.in);
+                int k2 = sc_11.nextInt();
+
+                int res_10 = TASKS.gcd(n2,k2);
+                System.out.println(res_10);
+
         }
 
 

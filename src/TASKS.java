@@ -88,4 +88,12 @@ public class TASKS {
         }
     }
 
+    public static int gcd(int a, int b) {
+        if (b == 0) {
+            return a; // Base case: GCD(a, 0) = a
+        } else {
+            return gcd(b, a % b); // Recursive case: GCD(a, b) = GCD(b, a % b)
+        }
+    }
+
 }
