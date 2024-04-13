@@ -96,4 +96,18 @@ public class TASKS {
         }
     }
 
+    public static int Count_appear(String str, char Char, int index) {
+        if (index == str.length()) {
+            return 0;
+        }
+
+        int count = 0;
+        if (str.charAt(index) == Char) {
+            count = 1;
+        }
+
+        return count + Count_appear(str, Char, index + 1);
+    }
+
+
 }

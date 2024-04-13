@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.print("Write a number between 1-10: ");
+        System.out.print("Write a number between 1-11: ");
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
 
@@ -116,6 +116,16 @@ public class Main {
                 int res_10 = TASKS.gcd(n2,k2);
                 System.out.println(res_10);
 
+            case 11:
+                System.out.print("Write string: ");
+                Scanner sc_12 = new Scanner(System.in);
+                String str_1 = sc_12.next();
+                System.out.print("Write char: ");
+                Scanner sc_13 = new Scanner(System.in);
+                String char_str = sc_13.next();
+                char char_1 = char_str.charAt(0);
+                int res_11 = TASKS.Count_appear(str_1, char_1, 0);
+                System.out.println(res_11);
         }
 
 
